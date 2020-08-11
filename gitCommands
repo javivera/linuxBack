@@ -3,3 +3,5 @@ git config --list
 ir a .ssh/
 ssh-keygen
 then add key to repo on github web 
+
+probando
