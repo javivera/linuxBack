@@ -1,0 +1,19 @@
+:set auto_save.session true
+:set selection-clipboard clipboard
+
+
+nT --> n number of tab
+
+d--> close current tab
+
+;Y -> coppy a selected text
+
+yy -> copy actual link
+
+f -> higlights and stay 
+F -> hifhlights and go
+
+ngm --> move tab to n 
+
+m--> create bookmark
+b--> bookmark tab

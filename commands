@@ -1,0 +1,159 @@
+MONITOR XRANDR
+xrandr -q --> List monitors
+xrandr --output VGA-1 --mode 1600x900 --right-of LVDS-1
+xrandr --output LVDS-1 --mode 1280-800
+
+
+USER ADD
+
+sudo useradd -m -d /home/jvera -s /bin/bash -c "Dueño de la pc, alto pro" -U jvera
+
+userdel <userName>
+
+usermod -c "nuevo nombre comentario" <username>
+
+
+usermod -l jacinto jmvera
+
+
+VARIOS
+
+
+~/.bashrc --> para cambiar alias
+
+sudo fuser -k 8000/tcp --> empty port django
+
+xev --> key press
+
+dd if=/dev/zero of=/dev/null -> stress
+
+watch -n 5 "cat /proc/cpuinfo | grep "MHz" > probando.txt " -> velocidad CPUs 
+
+lscpu
+
+lsb_release -a -> what linux distro
+
+CREATE PENDRIVE:
+
+lsblk
+
+sudo dd bs=4M if=path/to/input.iso of=/dev/sd<?> conv=fdatasync  status=progress
+
+cat >> file.txt   --> lets you write at the end of file.txt   ends with CTRL + D 
+
+OPERADORES
+
+algo > text.txt -> saves algo output to tex.txt 
+
+algo | less -> output algo to less
+
+MOUNT PENDRIVE:
+
+lsblk
+sudo blkid
+sudo fdisk -l
+
+sudo  mkdir /media/usb
+
+sudo mount /dev/sdb1 /media/usb
+
+sudo umount /media/usb
+lsbl
+
+BEGINNER'S GUIDE TO THE BASH TERMINAL
+
+NAVIGATION
+
+du -d 1 -h -> Size of files
+
+ls - list directory contents
+pwd - print name of current/working directory
+cd - change working directory
+pushd/popd - put working directory on a stack
+file - determine file type
+locate - find files by name
+updatedb - update database for locate
+which - locate a command
+history - display bash command history
+
+GETTING HELP
+
+whatis - display the on-line manual descriptions
+apropos - search the manual page names and descriptions
+man - an interface to the on-line reference manuals
+
+WORKING WITH FILES
+
+find - list all directory and sub directory
+mkdir - create a directory/make directories
+touch - change file timestamps/create empty files
+cp - copy files and directories
+mv - move (rename) files
+rm - remove files or directories
+rmdir - remove empty directories
+
+TEXT FILES
+
+cat - concatenate files and print on the standard output
+more/less - file perusal filter for crt viewing
+nano - command line text editor
+
+USERS
+
+sudo - execute a command as superuser
+su - change user ID or become another user
+users - print the user names of users currently logged in
+id - print real and effective user and group IDs
+
+CHANGING FILE PERMISSIONS
+
+chmod - change permissions of a file
+
+KILLING PROGRAMS AND LOGGING OUT
+
+Ctrl+C - kill a running command
+killall - kill processes by name
+exit - log out of bash
+
+USEFUL SHORTCUTS
+
+Ctrl+D - signal bash that there is no more input
+Ctrl+L - redraw the screen
+Ctrl++ - make text bigger in terminal emulator
+Ctrl+- - make text smaller in terminal emulator
+
+xrandr --prop
+arandr --> second monitor
+
+
+MOUNT CELLPHONE
+
+jmtpfs [OPTIONS] <mountpoint>
+mount <direcion>
+
+
+sudo umount -l --> Force umount
+usb-devices	
+
+UNZIP
+
+unzip -d <path of extraction>   <path of file to extact>
+
+tar -xvzf community_images.tar.gz
+
+DISK USAGE
+
+du -B MB -d 0 /directory
+
+VIM
+
+set clipboard=unnamedplus
+
+
+RUN COMMANDS HIDDEn
+
+nohup command >/dev/null 2>&1 & # runs in background, still doesn't create nohup.out
+
+
+
+wget "link" -O "nombre salida"

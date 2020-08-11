@@ -1,0 +1,22 @@
+yy --> copy current line
+yE --> copy next word
+
+p --> paste
+
+w (or W) --> move foward one word
+b (or B) --> move backwards one word
+
+i --> Start typing at the current place
+a --> Start typing one characte ahead
+
+$ --> end of line
+
+A^{\mathrm{o}} --> Interior of A
+
+
+Search and replace %s/wordtosearch/replacemente/action
+
+%s/word/replacemente/g --> replaces all apparitions
+
+
+:36,42s/Unix/Linux/g --> searchs an replace from line 36 to 42
